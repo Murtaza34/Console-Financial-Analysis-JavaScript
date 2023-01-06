@@ -1,8 +1,8 @@
 var finances = [
-['Jan-2010', 867884],
-['Feb-2010', 984655],
-['Mar-2010', 322013],
-['Apr-2010', -69417],
+['Jan-2010', 867884], //0,1
+['Feb-2010', 984655], //1,1
+['Mar-2010', 322013], //2,1
+['Apr-2010', -69417], //3,1
 ['May-2010', 310503],
 ['Jun-2010', 522857],
 ['Jul-2010', 1033096],
@@ -86,3 +86,23 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+let total = 0
+let totalNumberOfMonths = finances.length;
+let totalProfitLoss = 0;
+
+
+
+for (let i = 0; i < finances.length; i++) {
+  total += finances[i][1];
+  
+
+}
+
+
+
+
+console.log('Financial Analysis');
+console.log('<--------------------------->');
+console.log("Total Months: " + totalNumberOfMonths);
+console.log("Total: ", "£" + total);
